@@ -13,7 +13,26 @@ public class Driver {
       arr.set(i-10, Integer.toString(i));
     }
     for (int i = 0; i < 10; i++) {
-      System.out.println(arr.get(i));
+      System.out.println(arr.get(i) + " |  Size: " + arr.size());
     }
+    System.out.println("Resizing Tests");
+
+    arr.add(Integer.toString(10));
+    System.out.println(arr.get(9) + " |  Size: " + arr.size());
+    for (int i = 10; i < 20; i++) {
+      arr.add(Integer.toString(i+10));
+    }
+    for (int i = 0; i < arr.size(); i++) {
+      System.out.println(arr.get(i) + " |  Index: " + Integer.toString(i));
+    }
+    System.out.println("MORE TESTS:\n");
+    SuperArray arr2 = new SuperArray();
+    for (int i = 0; i < 234; i++) {
+      arr2.add(Integer.toString(i));
+    }
+    for (int i = 0; i < arr2.size(); i++) {
+      System.out.println(arr2.get(i) + " |  Index: " + Integer.toString(i));
+    }
+    System.out.println("Size: " + arr2.size());
   }
 }
