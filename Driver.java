@@ -52,5 +52,12 @@ public class Driver {
 
     // To String
     System.out.println(arr);
+
+    // Contains
+    for (int i = 0; i < arr.size(); i++) {
+      System.out.println(arr.get(i));
+    }
+    System.out.println(arr.contains("10"));
+    System.out.println(arr.contains("bruh"));
   }
 }
