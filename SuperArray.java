@@ -7,6 +7,11 @@ public class SuperArray {
     data = new String[10];
   }
 
+  public SuperArray(int initialCapacity) {
+    size = 0;
+    data = new String[initialCapacity];
+  }
+
   public int size() {
     return size;
   }
@@ -32,7 +37,7 @@ public class SuperArray {
   }
 
   private void resize() {
-    String[] newData = new String[size+10];
+    String[] newData = new String[size*2 + 1];
     for (int i = 0; i < data.length; i++) {
       newData[i] = data[i];
     }
