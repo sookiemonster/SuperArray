@@ -83,5 +83,12 @@ public class Driver {
     for (int i = 0; i < arr5.size(); i++) {
       System.out.println(arr5.get(i));
     }
+
+    // IndexOf
+    System.out.println();
+    System.out.println(arr5);
+    System.out.println(arr5.indexOf("2"));
+    System.out.println(arr5.indexOf("bruh"));
+    System.out.println(arr5.indexOf("4"));
   }
 }
