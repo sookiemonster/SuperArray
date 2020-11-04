@@ -25,6 +25,7 @@ public class Driver {
     for (int i = 0; i < arr.size(); i++) {
       System.out.println(arr.get(i) + " |  Index: " + Integer.toString(i));
     }
+
     System.out.println("MORE TESTS:\n");
     SuperArray arr2 = new SuperArray();
     for (int i = 0; i < 234; i++) {
@@ -34,5 +35,11 @@ public class Driver {
       System.out.println(arr2.get(i) + " |  Index: " + Integer.toString(i));
     }
     System.out.println("Size: " + arr2.size());
+
+    // Empty Tests:
+    System.out.println();
+    SuperArray arr3 = new SuperArray();
+    System.out.println(arr2.isEmpty());
+    System.out.println(arr3.isEmpty());
   }
 }
