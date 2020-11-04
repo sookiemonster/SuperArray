@@ -76,5 +76,12 @@ public class Driver {
       System.out.println(arr5.get(i));
     }
 
+    // Remove
+    System.out.println();
+    System.out.println(arr5);
+    arr5.remove(4);
+    for (int i = 0; i < arr5.size(); i++) {
+      System.out.println(arr5.get(i));
+    }
   }
 }
