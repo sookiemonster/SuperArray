@@ -49,5 +49,8 @@ public class Driver {
     for (int i = 0; i < 10; i++) {
       System.out.println(arr2.get(i));
     }
+
+    // To String
+    System.out.println(arr);
   }
 }
