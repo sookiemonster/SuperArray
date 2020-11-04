@@ -59,5 +59,9 @@ public class Driver {
     }
     System.out.println(arr.contains("10"));
     System.out.println(arr.contains("bruh"));
+
+    // Initial Capacity Constructor
+    SuperArray arr4 = new SuperArray(200);
+    System.out.println(arr4.isEmpty());
   }
 }
