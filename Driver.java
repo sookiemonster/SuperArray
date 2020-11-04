@@ -41,5 +41,13 @@ public class Driver {
     SuperArray arr3 = new SuperArray();
     System.out.println(arr2.isEmpty());
     System.out.println(arr3.isEmpty());
+    // Clear Tests
+    System.out.println();
+    arr2.clear();
+    System.out.println(arr2.isEmpty());
+    System.out.println(arr2.size());
+    for (int i = 0; i < 10; i++) {
+      System.out.println(arr2.get(i));
+    }
   }
 }

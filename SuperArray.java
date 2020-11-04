@@ -42,4 +42,9 @@ public class SuperArray {
   public boolean isEmpty() {
     return size == 0;
   }
+
+  public void clear() {
+    size = 0;
+    data = new String[10];
+  }
 }
