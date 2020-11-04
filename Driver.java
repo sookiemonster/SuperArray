@@ -63,5 +63,18 @@ public class Driver {
     // Initial Capacity Constructor
     SuperArray arr4 = new SuperArray(200);
     System.out.println(arr4.isEmpty());
+
+    // Add
+    System.out.println();
+    SuperArray arr5 = new SuperArray(10);
+    for (int i = 0; i < 5; i++) {
+      arr5.add(Integer.toString(i));
+    }
+
+    arr5.add(5, "bruh");
+    for (int i = 0; i < arr5.size(); i++) {
+      System.out.println(arr5.get(i));
+    }
+
   }
 }
