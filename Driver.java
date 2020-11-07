@@ -107,5 +107,14 @@ public class Driver {
     words.add("una");    words.add("ebi");     words.add("toro");
     System.out.println(words);
     System.out.println(words.lastIndexOf("ebi"));
+
+    // Equals
+    System.out.println(words);
+    SuperArray words2 = new SuperArray(40);
+    words2.add("kani");   words2.add("uni");     words2.add("ebi");     words2.add("una");
+    words2.add("una");    words2.add("ebi");     words2.add("kani");    words2.add("una");
+    words2.add("una");    words2.add("ebi");     words2.add("toro");
+    System.out.println(words.equals(words2));
+    System.out.println(words.equals(arr5));
   }
 }
