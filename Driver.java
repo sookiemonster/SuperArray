@@ -117,5 +117,7 @@ public class Driver {
     System.out.println(words.equals(words2));
     System.out.println(words.equals(arr5));
 
+    // Error Testing
+    SuperArray x = new SuperArray(-10);
   }
 }
