@@ -6,11 +6,9 @@ public class Driver {
       arr.add(Integer.toString(i));
       System.out.println("Added: " + i + " |  Size: " + arr.size());
     }
-    for (int i = 0; i < 10; i++) {
-      System.out.println(arr.get(i));
-    }
+    System.out.println(arr);
     for (int i = 10; i < 20; i++) {
-      arr.set(i-10, Integer.toString(i));
+      arr.add(Integer.toString(i));
     }
     for (int i = 0; i < 10; i++) {
       System.out.println(arr.get(i) + " |  Size: " + arr.size());
@@ -46,9 +44,7 @@ public class Driver {
     arr2.clear();
     System.out.println(arr2.isEmpty());
     System.out.println(arr2.size());
-    for (int i = 0; i < 10; i++) {
-      System.out.println(arr2.get(i));
-    }
+    System.out.println(arr2);
 
     // To String
     System.out.println(arr);
@@ -124,6 +120,17 @@ public class Driver {
       System.out.println("That's the right error!");
     } catch (RuntimeException e2) {
       System.out.println("Uh oh");
+    }
+
+    try {
+      SuperArray y = new SuperArray();
+      for (int i = 0; i < 12; i++) {
+        y.add("bruh");
+      }
+      y.get(-1);
+      System.out.println(y);
+    } catch (IndexOutOfBoundsException e) {
+      System.out.println("Correct Error: Index Out of Bounds");
     }
   }
 }

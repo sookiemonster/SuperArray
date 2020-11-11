@@ -9,7 +9,7 @@ public class SuperArray {
 
   public SuperArray(int initialCapacity) {
     if (initialCapacity < 0) {
-      throw new IllegalArgumentException("\nRecieved initial capacity: " + initialCapacity + "\nInitial capacity cannot be negative.");
+      throw new IllegalArgumentException("\nReceived initial capacity: " + initialCapacity + "\nInitial capacity cannot be negative.");
     }
     size = 0;
     data = new String[initialCapacity];
@@ -29,6 +29,9 @@ public class SuperArray {
   }
 
   public String get(int index) {
+    if (index < 0 || index >= size) {
+      throw new IndexOutOfBoundsException("\nIndex " + index + " out of bounds. Index must be equal to 0 or between 0 and the size of the SuperArray.");
+    }
     return data[index];
   }
 
