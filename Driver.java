@@ -172,5 +172,26 @@ public class Driver {
     } catch (IndexOutOfBoundsException e) {
       System.out.println("Correct Error (add at greater than size): Index Out of Bounds");
     }
+
+    try {
+      SuperArray rem = new SuperArray();
+      for (int i = 0; i < 12; i++) {
+        rem.add("bruh");
+      }
+      rem.remove(-1);
+    } catch (IndexOutOfBoundsException e) {
+      System.out.println("Correct Error (remove negative index): Index Out of Bounds");
+    }
+
+    try {
+      SuperArray rem2 = new SuperArray();
+      for (int i = 0; i < 12; i++) {
+        rem2.add("bruh");
+      }
+      rem2.remove(rem2.size());
+    } catch (IndexOutOfBoundsException e) {
+      System.out.println("Correct Error (remove at too large index): Index Out of Bounds");
+    }
+
   }
 }
