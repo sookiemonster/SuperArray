@@ -118,6 +118,12 @@ public class Driver {
     System.out.println(words.equals(arr5));
 
     // Error Testing
-    SuperArray x = new SuperArray(-10);
+    try {
+      SuperArray x = new SuperArray(-10);
+    } catch (IllegalArgumentException e) {
+      System.out.println("That's the right error!");
+    } catch (RuntimeException e2) {
+      System.out.println("Uh oh");
+    }
   }
 }
