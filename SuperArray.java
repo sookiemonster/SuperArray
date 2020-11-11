@@ -30,12 +30,15 @@ public class SuperArray {
 
   public String get(int index) {
     if (index < 0 || index >= size) {
-      throw new IndexOutOfBoundsException("\nIndex " + index + " out of bounds. Index must be equal to 0 or between 0 and the size of the SuperArray.");
+      throw new IndexOutOfBoundsException("\nIndex " + index + "is out of bounds. Index must be equal to 0 or between 0 and the size of the SuperArray.");
     }
     return data[index];
   }
 
   public String set(int index, String element) {
+    if (index < 0 || index >= size) {
+      throw new IndexOutOfBoundsException("\nIndex " + index + "is out of bounds. Index must be equal to 0 or between 0 and the size of the SuperArray.");
+    }
     if (data[index] != null) {
       data[index] = element;
     }

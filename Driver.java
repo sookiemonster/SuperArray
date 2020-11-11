@@ -117,7 +117,7 @@ public class Driver {
     try {
       SuperArray x = new SuperArray(-10);
     } catch (IllegalArgumentException e) {
-      System.out.println("That's the right error!");
+      System.out.println("That's the right error! Illegal Argument");
     } catch (RuntimeException e2) {
       System.out.println("Uh oh");
     }
@@ -131,6 +131,26 @@ public class Driver {
       System.out.println(y);
     } catch (IndexOutOfBoundsException e) {
       System.out.println("Correct Error: Index Out of Bounds");
+    }
+
+    try {
+      SuperArray z = new SuperArray();
+      for (int i = 0; i < 12; i++) {
+        z.add("bruh");
+      }
+      z.set(-1, "woah there");
+    } catch (IndexOutOfBoundsException e) {
+      System.out.println("Correct Error (set negative): Index Out of Bounds");
+    }
+
+    try {
+      SuperArray uwu = new SuperArray();
+      for (int i = 0; i < 12; i++) {
+        uwu.add("bruh");
+      }
+      uwu.set(uwu.size(), "woah there again");
+    } catch (IndexOutOfBoundsException e) {
+      System.out.println("Correct Error (set at index size): Index Out of Bounds");
     }
   }
 }
