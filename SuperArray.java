@@ -36,13 +36,14 @@ public class SuperArray {
   }
 
   public String set(int index, String element) {
+    String replacedElement = data[index];
     if (index < 0 || index >= size) {
       throw new IndexOutOfBoundsException("\nIndex " + index + " is out of bounds. Index must be equal to 0 or between 0 and the size of the SuperArray.");
     }
     if (data[index] != null) {
       data[index] = element;
     }
-    return element;
+    return replacedElement;
   }
 
   private void resize() {
